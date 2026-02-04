@@ -109,7 +109,7 @@ if st.button("Rebuild Models", type="primary"):
         delete_model_dumps()
         train_and_dump_models()
         st.cache_resource.clear()
-        time.sleep(2)
+        time.sleep(1)
         st.success("Models rebuilt successfully. Please upload test data.")
         time.sleep(.5)
     st.rerun()
