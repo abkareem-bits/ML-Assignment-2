@@ -165,7 +165,7 @@ if st.button("Evaluate Model", type="primary"):
     })
     st.table(metrics_df)
 
-    st.subheader("📌 Confusion Matrix")
+    st.subheader("Confusion Matrix")
     cm = confusion_matrix(y_true, y_pred)
     fig, ax = plt.subplots()
     sns.heatmap(cm, annot=True, fmt="d", cmap="Blues",
